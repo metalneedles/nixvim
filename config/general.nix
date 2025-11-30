@@ -7,14 +7,7 @@
   plugins = {
 
     web-devicons.enable = true;
-
-    nvim-tree = {
-      enable = true;
-      view = {
-        side = "left";
-        width = 30;
-      };
-    };
+    persistence.enable = true;
 
     cursorline = {
       enable = true;
@@ -31,24 +24,42 @@
       };
     };
 
-    bufferline = {
-      enable = true;
-      settings = {
-        options = {
-          offsets = [
-            {
-              filetype = "NvimTree";
-              text = "File Explorer";
-              highlight = "Directory";
-              separator = true;
-            }
-          ];
-          separator_style = "padded_slope";
-          show_buffer_icon = true;
-          color_icons = true;
-        };
-      };
-    };
+  };
+  opts = {
+    number = true;
+    relativenumber = true;
 
+    tabstop = 2;
+    softtabstop = 2;
+    showtabline = 2;
+    expandtab = true;
+
+    smartindent = true;
+    shiftwidth = 2;
+
+    encoding = "utf-8";
+    fileencoding = "utf-8";
+
+    termguicolors = true;
+
+    hlsearch = true;
+    incsearch = true;
+
+    warp = false;
+
+    ignorecase = true;
+    smartcase = true;
+    grepprg = "rg --vimgrep";
+    grepformat = "%f:%l:%c:%m";
+    fillchars = "eob: ,fold: ,foldopen:,foldsep: ,foldclose:";
+
+    updatetime = 50;
+    completeopt = ["menuone" "noselect" "noinsert"];
+
+    # See https://github.com/kevinhwang91/nvim-ufo#minimal-configuration
+    vim.o.foldcolumn = "1";
+    vim.o.foldlevel = 99;
+    vim.o.foldlevelstart = 99;
+    vim.o.foldenable = true;
   };
 }

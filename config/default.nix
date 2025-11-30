@@ -1,4 +1,8 @@
 {
   # Import all your configuration modules here
-  imports = [ ./general.nix ];
+  imports = [ 
+    ./general.nix 
+    ./bufferline.nix
+    ./treesitter.nix
+  ];
 }
