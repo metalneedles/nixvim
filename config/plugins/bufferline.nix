@@ -13,7 +13,7 @@
               separator = true;
             }
           ];
-          separator_style = "padded_slope";
+          separator_style = "slope";
           show_buffer_icon = true;
           color_icons = true;
         };

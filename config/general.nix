@@ -45,8 +45,6 @@
     hlsearch = true;
     incsearch = true;
 
-    warp = false;
-
     ignorecase = true;
     smartcase = true;
     grepprg = "rg --vimgrep";
@@ -57,9 +55,9 @@
     completeopt = ["menuone" "noselect" "noinsert"];
 
     # See https://github.com/kevinhwang91/nvim-ufo#minimal-configuration
-    vim.o.foldcolumn = "1";
-    vim.o.foldlevel = 99;
-    vim.o.foldlevelstart = 99;
-    vim.o.foldenable = true;
+    foldcolumn = "1";
+    foldlevel = 99;
+    foldlevelstart = 99;
+    foldenable = true;
   };
 }
