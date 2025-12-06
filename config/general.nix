@@ -8,6 +8,8 @@
 
     web-devicons.enable = true;
     persistence.enable = true;
+    nvim-autopairs.enable = true;
+    gitsigns.enable = true;
 
     cursorline = {
       enable = true;

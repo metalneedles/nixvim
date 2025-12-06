@@ -11,7 +11,7 @@
               text = "File Explorer";
               highlight = "Directory";
               separator = true;
-            }
+            } 
           ];
           separator_style = "slope";
           show_buffer_icon = true;
@@ -31,4 +31,15 @@
     };
 
   };
+
+  extraConfigLua = ''
+    vim.api.nvim_create_autocmd("BufEnter", {
+      nested = true,
+      callback = function()
+        if #vim.api.nvim_list_bufs() == 1 and vim.bo.filetype == "NvimTree" then
+          vim.cmd("quit")
+        end
+      end,
+    })
+  '';
 }
