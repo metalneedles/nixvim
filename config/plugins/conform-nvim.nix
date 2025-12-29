@@ -36,6 +36,9 @@ in {
           shellharden.command = lib.getExe pkgs.shellharden;
           shfmt.command = lib.getExe pkgs.shfmt;
           nixfmt.command = lib.getExe pkgs.nixfmt-rfc-style;
+          cmake_format.command = lib.getExe pkgs.cmakeMinimal;
+          bake.command = lib.getExe pkgs.mbake;
+          astyle.command = lib.getExe pkgs.astyle;
           yq.command = lib.getExe pkgs.yq;
       	};
 

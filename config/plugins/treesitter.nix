@@ -5,7 +5,8 @@
       enable = true;
       nixGrammars = true;
       nixvimInjections = true;
-      folding = false;
+      folding.enable = false;
+      highlight.enable = true;
       grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
 	      bash
 	      nix
@@ -18,7 +19,8 @@
 	      gitignore
 	      json
 	      toml
-	      yaml
+        yaml
+        zig
       ];
       settings.indent.enable = true;
     };

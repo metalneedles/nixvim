@@ -21,12 +21,17 @@
         };
         cursorword = {
           enable = true;
-          hl = {underline = true;};
+          hl.underline = true;
         };
       };
     };
-
   };
+  
+  globals = {
+    mapleader = " ";
+    maplocalleader = " ";
+  };
+
   opts = {
     number = true;
     relativenumber = true;

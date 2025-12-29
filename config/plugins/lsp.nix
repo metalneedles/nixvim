@@ -6,7 +6,10 @@
       enable = true;
       servers = {
         yamlls.enable = true;
-        nil_ls.enable = true;
+        nil_ls = {
+          enable = true;
+          settings.nil.nix.flake.autoArchive = false;
+        };
         bashls.enable = true;
         ccls.enable = true;
         csharp_ls = {
