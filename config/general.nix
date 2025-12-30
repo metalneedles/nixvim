@@ -1,4 +1,4 @@
-{
+{ lib, ... }: {
   clipboard = {
     register = "unnamedplus";
     providers.wl-copy.enable = true;
@@ -47,7 +47,7 @@
     encoding = "utf-8";
     fileencoding = "utf-8";
 
-    termguicolors = true;
+    termguicolors = lib.mkForce false;
 
     hlsearch = true;
     incsearch = true;

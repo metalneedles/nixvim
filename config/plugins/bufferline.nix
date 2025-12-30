@@ -13,7 +13,7 @@
               separator = true;
             } 
           ];
-          separator_style = "slope";
+          separator_style = "thin";
           show_buffer_icon = true;
           color_icons = true;
         };
@@ -32,6 +32,7 @@
 
   };
 
+  /* 
   extraConfigLua = ''
     vim.api.nvim_create_autocmd("BufEnter", {
       nested = true,
@@ -41,5 +42,5 @@
         end
       end,
     })
-  '';
+  ''; */
 }

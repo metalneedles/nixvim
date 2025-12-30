@@ -6,7 +6,7 @@
       nixGrammars = true;
       nixvimInjections = true;
       folding.enable = false;
-      highlight.enable = true;
+      highlight.enable = false;
       grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
 	      bash
 	      nix
@@ -24,5 +24,5 @@
       ];
       settings.indent.enable = true;
     };
-  };  
+  };
 }
